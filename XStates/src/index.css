@@ -17,9 +17,9 @@ select {
   font-weight: bold;
 }
 
-.country {
+.city {
   font-size: 1.5rem;
 }
-.city_state {
+.state_country {
   color: gray;
 }
