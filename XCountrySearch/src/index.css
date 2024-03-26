@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(33, 33, 33, 0.556);
+}
+
+.header input {
+  padding: 0.5rem 1.5rem;
+  width: 60%;
+  border: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1267px;
+  width: 100%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 32px;
+}
+
+.card {
+  width: 160px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 2px 4px gray;
+  border-radius: 1px solid gray;
+  border-radius: 4px;
+  padding: 4px 8px;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+
+.card img {
+  width: 160px;
+  height: 90px;
+  object-position: center;
+  object-fit: cover;
+}
+
+.loader {
+  margin-top: 64px;
+  width: 60px;
+  height: 60px;
+  border: 8px solid gray;
+  border-top: 8px solid #ffff;
+  border-radius: 50%;
+  animation: myrotate 1s infinite linear;
+}
+
+@keyframes myrotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
